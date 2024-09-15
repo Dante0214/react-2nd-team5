@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { BsList } from "react-icons/bs";
 import { FiSearch } from "react-icons/fi";
 import { PiBookmarkSimple } from "react-icons/pi";
-import { SlLogin, SlLogout } from "react-icons/sl"; 
+import { SlLogin, SlLogout } from "react-icons/sl";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../redux/reducer/authReducer";
 import AuthModal from "../AuthModal/AuthModal";
@@ -90,9 +90,12 @@ const Header = () => {
               <Link>
                 <BsList className="btn-mobile-menu" size="30px" />
               </Link>
-            </li>            
-            {user ? <SlLogout onClick={handleAuthAction} size="25px" />
-              : <SlLogin onClick={handleAuthAction} size="25px" />}
+            </li>
+            {user ? (
+              <SlLogout onClick={handleAuthAction} size="25px" />
+            ) : (
+              <SlLogin onClick={handleAuthAction} size="25px" />
+            )}
           </ul>
         </Container>
       </div>

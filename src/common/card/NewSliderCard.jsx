@@ -19,22 +19,23 @@ const NewSliderCard = ({ recipeitem }) => {
   };
 
   return (
-    <Row xs={1} md={2} className="g-4">
-      <Col>
-        <Card className="slidercard_url">
-          <Card.Img
-            variant="top"
-            src={recipeitem?.ATT_FILE_NO_MAIN}
-            className="card_img_newslidercard"
+    <Row xs={1} md={2} className="g-4-newslidercard">
+      <Col className="newslidercard_col_container">
+        <Card className="slidercard2_url">
+          <div
+            style={{
+              backgroundImage: `url(${recipeitem?.ATT_FILE_NO_MAIN})`,
+            }}
+            className="card_img_newslidercard_style"
             onClick={godetail}
           />
-          <Card.Body>
-            <div className="card-body-content">
+          <Card.Body className="newcardbody_bigcontain">
+            <div className="card-body-content-newslider">
               <div className="slidercard_rcp_nm" onClick={godetail}>
                 <div className="rcp-way2_size"># {recipeitem?.RCP_WAY2}</div>
                 {/* <div>{recipeitem?.RCP_NM}</div> */}
                 <div className="rcp-nm">
-                  {getShortName(recipeitem?.RCP_NM, 13)}{" "}
+                  {getShortName(recipeitem?.RCP_NM, 13)}
                 </div>
               </div>
 

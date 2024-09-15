@@ -1,4 +1,4 @@
-.slidercard_url{
+.slidercard3_url{
     width: 310px;
     height:450px;
     cursor:pointer;
@@ -47,10 +47,13 @@
 .cr_bookmark_rcpnm{
     font-size:25px;
 }
-.card_img_bookmarkcardlist{
-    width:auto;
-    height:75%;
+.card_img_bookmarkcardlist_list{
+    width:310px;
+    height:350px;
     border-radius:25px 25px 0 0;
+    /* object-fit: cover; */
+    background-size: cover;
+    background-position: center;
 }
 
 .cr_recipeitem_rcpway2{
@@ -84,10 +87,16 @@ align-self:flex-end;
 
 } */
 
-@media (orientation:portrait){
-    .slidercard_url{
-        width: auto;
-        height:330px;
+/* 추가 부분 */
+/* 캐러셀형태일때 요리이름 line-height조정 */
+.bookm_rcpnm_rcpnm {
+    line-height: 1.2;
+}
+
+@media(max-width: 768px){
+    .slidercard3_url{
+        width: 198px;
+        height:300px;
         background-size:cover;
         cursor:pointer;
         transition:0.5s;
@@ -109,5 +118,18 @@ align-self:flex-end;
         font-size:16px;
         
        }
-     
+       .card_img_bookmarkcardlist_list{
+        width:198px !important;
+        height:240px !important;
+        border-radius:25px 25px 0 0;
+        /* object-fit: cover; */
+        background-size: cover;
+        background-position: center;
+    }
+    .bookm_rcp_way2{
+font-size:13px;
+    }
+    .bookm_rcpnm_rcpnm{
+        font-size:18px;
+    }
 }

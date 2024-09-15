@@ -13,11 +13,6 @@ const HomepageSlider = ({ data, responsive }) => {
 
   return (
     <div>
-      <div className="slidertitle_big">
-        <h3 className="slidertitle">
-          <FontAwesomeIcon icon={faSpoon} /> 뭘 좋아할지 몰라서 다!
-        </h3>
-      </div>
       {/* sliderData가 존재하고 비어 있지 않은 경우에만 Carousel 렌더링 */}
       {sliderData.length > 0 ? (
         <Carousel

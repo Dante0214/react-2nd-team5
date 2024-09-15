@@ -36,6 +36,8 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  /* 겹쳐서 적용된것 같아 수정한 부분 */
+  text-align: left;
 }
 
 .footer .footer-wrapper .footer-text strong{

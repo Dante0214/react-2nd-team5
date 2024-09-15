@@ -19,10 +19,9 @@ const BookmarkInfo = () => {
 
   return (
     <div>
-      <h3 className="bookmarkinfo">
-        <FontAwesomeIcon icon={faSpoon} />{" "}
-        {user ? `${user.userId}님의 찜목록` : "내가 찜한 요리"}
-      </h3>
+      <div dispatchEvent className="bookmarkinfo">
+        {user ? `${user.userId}님의 찜목록!` : "내가 찜한 요리!"}
+      </div>
       <div>
         {user ? (
           <BookmarkSliderH guestBookmarks={userBookmarks} />

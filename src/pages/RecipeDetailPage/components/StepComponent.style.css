@@ -1,25 +1,23 @@
-.step-img {
+.recipe-step {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.recipe-step .repeat-box{
+  display: flex;
+}
+
+.recipe-step .repeat-box .step-img {
   width: 320px;
   border-radius: 10px;
 }
-.recipe-step {
-  width: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin-top: 60px;
-  margin-bottom: 100px;
-}
 
-.step-text {
+.recipe-step .repeat-box .step-text {
   font-size: 20px;
   font-weight: 400;
-  width: 80%;
 }
 
-.repeat-box {
-  display: flex;
-  margin-bottom: 50px;
-}
 .step-num {
   color: white;
   text-align: center;
@@ -31,22 +29,12 @@
   margin-bottom: 8px;
 }
 
-@media screen and (max-width: 63rem) {
-  .step-img {
-    width: 228px;
-    border-radius: 5px;
+@media(max-width: 768px){
+  .recipe-step .repeat-box .step-img {
+    width: 240px;
   }
 
-  .step-text {
-    font-size: 16px;
-    font-weight: 400;
-    width: 40%;
-  }
-
-  .recipe-step {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 100px;
+  .recipe-step .repeat-box .step-text {
+    font-size: 18px;
   }
 }

@@ -32,7 +32,7 @@ const TopSliderCard = ({ recipeitem, key }) => {
         className="top-item-card"
         onClick={godetail}
       >
-        <div className="top-item-card-overlay">top-item-card-overlay</div>
+        <div className="top-item-card-overlay"></div>
         <div className="top-item-card-contents">
           <div className="top-item-card-text">
             <div className="top-item-card-tag">#{recipeitem?.RCP_PAT2} </div>

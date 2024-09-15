@@ -42,6 +42,7 @@
   border: 3px solid #ed0c0c;
   border-radius: 30px;
   padding: 5px;
+  
 }
 
 .home-page .top-box-area .top-box-area-contents .top-search-button {
@@ -82,12 +83,15 @@
   width: 70px;
   height: 70px;
   border-radius: 50px;
-  background-color: rgb(255, 68, 0);
+  background-color: #ed0c0c;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
+}
+.menu-slide-turm{
+  margin-top:23px;
 }
 @media (max-width: 768px) {
   .home-page .top-box-area {
@@ -134,5 +138,10 @@
     border: 3px solid #ed0c0c;
     border-radius: 30px;
     padding: 5px;
+    cursor:pointer;
+  }
+  .menu-slide-turm{
+    margin-top:15px;
   }
 }
+
