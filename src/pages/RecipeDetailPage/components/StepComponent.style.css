@@ -1,10 +1,13 @@
 .recipe-step {
+  margin-top: 50px;
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 50px;
 }
 
-.recipe-step .repeat-box{
+.recipe-step .repeat-box {
   display: flex;
 }
 
@@ -29,7 +32,7 @@
   margin-bottom: 8px;
 }
 
-@media(max-width: 768px){
+@media (max-width: 768px) {
   .recipe-step .repeat-box .step-img {
     width: 240px;
   }

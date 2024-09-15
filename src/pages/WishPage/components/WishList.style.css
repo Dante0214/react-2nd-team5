@@ -6,7 +6,6 @@ body {
 }
 
 .wish-page {
-  background-color: #F8F8F8;
 }
 
 .wishlist-background {
@@ -14,80 +13,107 @@ body {
 }
 
 .wish-list-items {
-  padding: 60px 0;
+  padding: 40px 0;
   text-align: center;
 }
 
 .wish-list-items > h1 {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   font-weight: 700;
 }
 
 /* 기본 데스크탑 스타일 */
 .wishlist-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 1rem;
-  background-color: #FFF;
+  padding: 1.5rem;
+  background-color: #F8F8F8;
   cursor: pointer;
+  max-width: 70%;
+  min-height: 200px;
+  border-radius: 8px;
+  margin: 0 auto 1rem auto;
 }
 
-.card-img {
-  padding: 2rem 1rem;
-  max-width: 100%;
+.wish-img-box {
+  flex: 0 0 200px;
+  height: 150px;
+  overflow: hidden;
 }
 
-.card-content-box {
+.wish-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+}
+
+.wish-content-box {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
-  gap: 20px;
+  flex: 1;
+  gap: 15px;
+  padding: 0 1rem;
 }
 
-.card-content-title {
+.wish-content-title {
   text-align: center;
   font-weight: 700;
   font-size: 30px;
 }
 
-.card-btn-box {
+.wish-btn-box {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 2rem;
+  justify-content: center;
+  padding: 1rem 0;
+  flex: 0 0 auto;
+  width: auto;
 }
+
 
 /* 모바일 버전 스타일 - 상단에 이미지, 하단에 콘텐츠 및 버튼 */
 @media (max-width: 768px) {
   .wishlist-row {
-    display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0.5rem;
+    height: auto;
     margin-bottom: 0.5rem;
   }
 
-  .card-img {
-    padding: 1rem;
-    max-width: 100%;
+  .wish-img-box {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
   }
 
-  .card-content-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  .wish-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .wish-content-box {
     width: 100%;
     text-align: center;
+    padding: 1rem 0;
   }
 
-  .card-content-title {
-    font-size: 20px;
+  .wish-content-title {
+    font-size: 18px;
   }
 
-  .card-btn-box {
+  .wish-btn-box {
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 1rem;
-    width: 100%;
+    padding: 0.5rem;
   }
 
   Button {

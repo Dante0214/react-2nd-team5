@@ -80,7 +80,7 @@ align-self:flex-end;
 
 @media(max-width: 768px){
     .slidercard2_url{
-        width: 198px;
+        width: auto;
         height:300px;
         background-size:cover;
         cursor:pointer;
@@ -89,7 +89,7 @@ align-self:flex-end;
         margin-bottom:5px;
     }
     .card_img_newslidercard_style{
-        width:198px !important;
+        width:auto;
         height:240px !important;
         border-radius:25px 25px 0 0;
         /* object-fit: cover; */
@@ -122,8 +122,8 @@ align-self:flex-end;
         display:flex;
         align-items:center;
         border-radius:25px;
-        justify-content:space-between;
-       width:175px;
+      justify-content:space-between;
+       width:auto;
     }
     .newcardbody_bigcontain{
         width:175px !important;

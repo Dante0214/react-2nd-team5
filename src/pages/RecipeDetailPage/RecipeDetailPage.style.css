@@ -55,7 +55,10 @@ body {
   gap: 20px;
 }
 
-.recipe-detail-page .detail-section1 .detail-section1-wrapper .detail-section1-img {
+.recipe-detail-page
+  .detail-section1
+  .detail-section1-wrapper
+  .detail-section1-img {
   width: 100%;
 }
 
@@ -69,6 +72,8 @@ body {
 
 .recipe-detail-page .detail-section1-text {
   width: 100%;
+  margin-top: 30px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,9 +87,10 @@ body {
 
 /* 찜하기 URL복사하기 버튼 */
 .recipe-detail-page .button-two .button {
+  margin-top: 50px;
   border: 1px solid #616161;
   width: 50%;
-  max-width: 280px;
+  max-width: 320px;
   height: 54px;
   border-radius: 5px;
   color: #616161;
@@ -95,10 +101,24 @@ body {
   justify-content: center;
   cursor: pointer;
 }
-
+.recipe-detail-page .button-two .button-jjim {
+  margin-top: 50px;
+  border: 1px solid #ed0c0c;
+  width: 50%;
+  max-width: 320px;
+  height: 54px;
+  border-radius: 5px;
+  color: #ed0c0c;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 /* section2 */
 .recipe-detail-page .detail-section2 {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .recipe-detail-page .item-info {
@@ -127,13 +147,13 @@ body {
 
 /* section2 - step */
 .recipe-detail-page .detail-section2-step {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 /* 반응형 작업 */
 @media (min-width: 1400px) {
   .recipe-detail-page .detail-section1 .detail-section1-wrapper {
-      max-width: 1320px;
+    max-width: 1320px;
   }
 }
 
@@ -143,19 +163,12 @@ body {
   }
 }
 
-@media(max-width: 1024px){
-  .recipe-detail-page .button-two {
-    flex-direction: column;
-  }
-
-  .recipe-detail-page .button-two .button {
-    width: 100%;
-  }
+@media (max-width: 1024px) {
 }
 
 @media (max-width: 992px) {
   .recipe-detail-page .detail-section1 .detail-section1-wrapper {
-      max-width: 960px;
+    max-width: 960px;
   }
 }
 
@@ -166,7 +179,7 @@ body {
   }
   .recipe-detail-page .detail-section1-text {
     max-width: 540px;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 0 15px;
   }
 
@@ -179,8 +192,8 @@ body {
     border-radius: 0;
   }
 
-  .recipe-detail-page .button-two .button {
-    max-width: 100%;
+  .button-two {
+    display: flex;
   }
 
   .recipe-detail-page .detail-section2-info {
@@ -191,8 +204,10 @@ body {
 /* 모바일 */
 @media (max-width: 576px) {
   .recipe-detail-page .detail-section1 .detail-section1-wrapper {
-      max-width: 540px;
+    max-width: 540px;
   }
-} 
-
-
+  .button-two {
+    display: flex;
+    gap: 10px;
+  }
+}
