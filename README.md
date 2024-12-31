@@ -1,4 +1,4 @@
 ![image](https://github.com/user-attachments/assets/da9462c1-c5b4-45e9-bef9-b2f45d540a17)
 
 
-https://react-2nd-team5-cqrk.vercel.app/
+https://bejewelled-cuchufli-22921c.netlify.app/
