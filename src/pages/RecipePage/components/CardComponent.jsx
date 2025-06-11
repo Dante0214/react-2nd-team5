@@ -3,6 +3,7 @@ import { Card, Col, Row } from "react-bootstrap";
 import "./CardComponent.style.css";
 import { useNavigate } from "react-router-dom";
 import { RxBookmark, RxBookmarkFilled } from "react-icons/rx";
+import { PiBookmarkSimpleThin, PiBookmarkSimpleFill } from "react-icons/pi";
 
 const CardComponent = ({ recipe, handleBookMark, isBookmarked }) => {
   const navigate = useNavigate();
@@ -30,15 +31,15 @@ const CardComponent = ({ recipe, handleBookMark, isBookmarked }) => {
             </Col>
             <Col xs={3} sm={3} md={3} className="bookmark">
               {isBookmarked ? (
-                <RxBookmarkFilled
+                <PiBookmarkSimpleFill
                   className="bookmark-icon"
-                  size="3rem"
+                  size="3.2rem"
                   onClick={handleBookMark}
                 />
               ) : (
-                <RxBookmark
+                <PiBookmarkSimpleThin
                   className="bookmark-icon"
-                  size="3rem"
+                  size="3.2rem"
                   onClick={handleBookMark}
                 />
               )}

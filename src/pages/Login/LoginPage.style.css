@@ -5,6 +5,7 @@ body {
   width: 100%;
 }
 .login-background {
+  background: url("../../common/assets/bg_i.jpg") no-repeat center/cover;
 }
 .login-box {
   width: 44vh;

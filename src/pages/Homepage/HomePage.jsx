@@ -39,7 +39,6 @@ const HomePage = () => {
             <Form className="d-flex" onSubmit={searchByKeyword}>
               <input
                 type="text"
-                className="me-2"
                 aria-label="Search"
                 value={keyword}
                 onChange={(event) => setKeyword(event.target.value)}
@@ -54,14 +53,12 @@ const HomePage = () => {
       <div className="top-slide-area">
         <TopSlide />
       </div>
-
-      <div className="menu-slide-turm">
+      <div classNmae="home_page_banner_container">{/* <Baner/> */}</div>
+      <div>
         <MenuSlide />
         {/* RandomSlide에서 RandomeRecipe로 변경 */}
         <RandomRecipe />
-        <div className="menu-slide-turm">
-          <BookmarkInfo />
-        </div>
+        <BookmarkInfo />
       </div>
       <div className="up_css_container">
         <div onClick={scrollToTop}>

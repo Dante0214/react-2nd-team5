@@ -32,14 +32,20 @@ const TopSliderCard = ({ recipeitem }) => {
               className="bookmark-icon-card"
               size="3rem"
               color="#ffffff"
-              onClick={() => toggleBookmark(recipeitem)}
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleBookmark(recipeitem);
+              }}
             />
           ) : (
             <PiBookmarkSimpleThin
               className="bookmark-icon-card"
               size="3rem"
               color="#ffffff"
-              onClick={() => toggleBookmark(recipeitem)}
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleBookmark(recipeitem);
+              }}
             />
           )}
         </div>

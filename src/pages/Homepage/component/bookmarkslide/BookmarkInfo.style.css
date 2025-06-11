@@ -1,17 +1,20 @@
-.bookmarkinfo{
-    font-weight:600;
-   text-align:center;
-   padding:20px;
-   font-size:33px;
-   }
+.bookmarkinfo {
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  font-size: 36px;
+}
+.book-mark-info-box {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
 
-   @media(max-width: 768px){
-    .bookmarkinfo{
-        text-align:center;
-        margin-top:30px;
-        margin-bottom:15px;
-        font-weight:500;
-        font-size:23px;
-    }
-    
+@media (max-width: 768px) {
+  .bookmarkinfo {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 30px;
+  }
 }

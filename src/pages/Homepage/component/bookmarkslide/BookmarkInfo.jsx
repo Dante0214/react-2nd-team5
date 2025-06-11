@@ -18,7 +18,7 @@ const BookmarkInfo = () => {
   }
 
   return (
-    <div>
+    <div className="book-mark-info-box">
       <div dispatchEvent className="bookmarkinfo">
         {user ? `${user.userId}님의 찜목록!` : "내가 찜한 요리!"}
       </div>

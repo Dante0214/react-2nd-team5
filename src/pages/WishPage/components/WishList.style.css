@@ -30,17 +30,19 @@ body {
   align-items: center;
   margin-bottom: 1rem;
   padding: 1.5rem;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   cursor: pointer;
   max-width: 70%;
-  min-height: 200px;
-  border-radius: 8px;
+  min-height: 150px;
+  border-radius: 20px;
   margin: 0 auto 1rem auto;
 }
 
 .wish-img-box {
   flex: 0 0 200px;
-  height: 150px;
+  border-radius: 10px;
+  width: 300px;
+  height: 120px;
   overflow: hidden;
 }
 
@@ -54,42 +56,43 @@ body {
 .wish-content-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: left;
   flex: 1;
-  gap: 15px;
+  gap: 3px;
   padding: 0 1rem;
 }
 
 .wish-content-title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 30px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #2a2a2a;
 }
 
 .wish-btn-box {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
+  font-size: 10px;
+  width: 80px;
   padding: 1rem 0;
   flex: 0 0 auto;
-  width: auto;
 }
 
-
 /* 모바일 버전 스타일 - 상단에 이미지, 하단에 콘텐츠 및 버튼 */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .wishlist-row {
+    width: 260px;
     flex-direction: column;
     align-items: center;
-    padding: 0.5rem;
+    padding: 1rem;
+
     height: auto;
-    margin-bottom: 0.5rem;
   }
 
   .wish-img-box {
     width: 100%;
     height: auto;
+    margin-top: 10px;
     max-height: 200px;
   }
 
@@ -98,7 +101,10 @@ body {
     height: 100%;
     object-fit: cover;
   }
-
+  .wish-two-content {
+    display: flex;
+    justify-content: space-between;
+  }
   .wish-content-box {
     width: 100%;
     text-align: center;
@@ -106,7 +112,7 @@ body {
   }
 
   .wish-content-title {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .wish-btn-box {
@@ -117,7 +123,7 @@ body {
   }
 
   Button {
-    font-size: 14px;
+    font-size: 10px;
     padding: 0.5rem 1rem;
   }
 }
